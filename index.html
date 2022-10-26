@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- HEADER START-->
+  <header>
+    <div class="header">
+      <div class="header__logo">
+       <button  > <img class='menu' src="images/icon-menu.svg" alt="open menu"></button>
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <nav>
+    
+      <div class="header__links">
+        <ul class="header__links__items">
+          <button><img src="images/icon-close.svg" alt="close menu" class="close-menu"></button>
+          <li class="list-item"><a href="#">Collections</a></li>
+          <li class="list-item"><a href="#">Men</a></li>
+          <li class="list-item"><a href="#">Women</a></li>
+          <li class="list-item"><a href="#">About</a></li>
+          <li class="list-item"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <!-- row-end links -->
+      <ul class="header__links__items__end">
+        <button class="list-item">
+          <span class="redbubble">1</span>
+          <img  class='card' src="images/icon-cart.svg" alt="basket-card" class="basket">
+        </button>
+        <div class="card__box">
+          <div class="card__box__wrap">
+           
+            <h2>Cart</h2>
+           
+            <p class="error">Your card is empty.</p>
+            <div class="card__box__wrap__inside">
+              <div class="inside-row">
+                <img src="images/image-product-1-thumbnail.jpg" alt="image of the shoe you chose" class="inside">
+                <div class="inside-col">
+                
+                  <p class="inside-info"> Fall Limited Edition Sneakers</p>
+                  <p class="cost"> $125.00 <span> x </span> <span class="quanitySum">0</span> <span class="sum"> </span></p>
+                </div>
+               <img src="images/icon-delete.svg" alt="clear basket" class="clear">
+              </div>
+            
+             <button class="checkout">Checkout</button>
+            </div>
+          </div>
+          
+
+        </div>
+        <button class="list-item"><img class='pic' src="images/image-avatar.png" alt="profil-picture" class="basket"></button>
+      </ul>
+      </nav>
+    </div>
+  
+  </header>
+  <!-- MAIN SECTION START-->
+  <main class="main">
+   <section class="images">
+    <!-- GALLERY IMAGE START-->
+
+
+
+    <div class="images__gallery ">
+      <img src="images/image-product-1.jpg" alt="image of shoe" class="images__gallery__item visible lightboxImg">
+      <img src="images/image-product-2.jpg" alt="image of shoe" class="images__gallery__item lightboxImg">
+      <img src="images/image-product-3.jpg" alt="image of shoe" class="images__gallery__item lightboxImg">
+      <img src="images/image-product-4.jpg" alt="image of shoe" class="images__gallery__item lightboxImg">
+      
+      <div class="images__gallery__actions">
+        <button class="prev"><img src="images/icon-previous.svg" alt="previous-button-mobile"></button>
+        <button class="next"><img src="images/icon-next.svg" alt="next-button"></button>
+      
+      </div>
+     
+     
+    </div>
+    <!-- GALLERY IMAGE END -->
+    <!-- THUBNAILS START -->
+   
+    <div class="images__thubnails">
+    <div class="images__thubnails__small-icon">
+      <img src="images/image-product-1-thumbnail.jpg" alt="image of small shoe" class="small lightboxImg">
+      <img src="images/image-product-2-thumbnail.jpg" alt="image of small shoe" class="small lightboxImg">
+      <img src="images/image-product-3-thumbnail.jpg" alt="image of small shoe" class="small lightboxImg">
+      <img src="images/image-product-4-thumbnail.jpg" alt="image of small shoe" class="small lightboxImg">
+ 
+
+    </div>
+
+    </div>
+   <!-- THUBNAILS END -->
+
+   </section>
+   <!-- SECTION WITH IMAGES END -->
+
+
+
+   <!-- ligtBox end -->
+      <!-- SECTION WITH ADD TP CART START -->
+      <section class="cart-checkout">
+        <div class="cart-checkout__info">
+          <h3>SNEAKER COMPANY</h3>
+          <h1>
+            Fall Limited Edition Sneakers
+          </h1>
+          <p>
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+        </div>
+     <div class="cart-checkout__price">
+      <div class="cart-checkout-row1">
+      <p> $125.00 <span>50%</span></p>
+        </div>
+        <p class="delete"><del> $250.00</del></p>
+     </div>
+     <div class="cart-checkout-row">
+      <div class="input-group">
+        <input type="button"min='0'value="-" class="button-minus" data-field="quantity">
+        <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+        <input type="button" value="+" class="button-plus" data-field="quantity">
+        
+      </div>
+<div class="btn-container">
+  <button class='addBtn'type="button">
+    <img src="images/icon-cart.svg" alt="add to cart" >
+    Add to cart
+   </button>
+</div>
+     
+     
+    
+     </div>
+      </section>
+       <!-- SECTION WITH ADD TP CART END -->
+
+
+
+       
+   <section class=" lightBoxSection">
+    <!-- GALLERY IMAGE START-->
+
+
+    <div class="closeBtn">
+      <img src="images/icon-close.svg" alt="close button" class="closeBtn">
+      </div>
+    <div class="lightBoxSection__gallery ">
+   
+      <img src="images/image-product-1.jpg" alt="image of shoe" class="lightBoxSection__gallery__item visible lightboxImg">
+      <img src="images/image-product-2.jpg" alt="image of shoe" class="lightBoxSection__gallery__item lightboxImg">
+      <img src="images/image-product-3.jpg" alt="image of shoe" class="lightBoxSection__gallery__item lightboxImg">
+      <img src="images/image-product-4.jpg" alt="image of shoe" class="lightBoxSection__gallery__item lightboxImg">
+      
+      <div class="lightBoxSection__gallery__actions">
+        <button class="prevBtn"><img src="images/icon-previous.svg" alt="previous-button-mobile"></button>
+        <button class="nextBtn"><img src="images/icon-next.svg" alt="next-button"></button>
+      
+      </div>
+     
+     
+    </div>
+    <!-- GALLERY IMAGE END -->
+    <!-- THUBNAILS START -->
+   
+    <div class="ligthBoxSection__thubnails">
+    <div class="lightBoxSection__thubnails__small-icon">
+      <img src="images/image-product-1-thumbnail.jpg" alt="image of small shoe" class="small lightboxImg">
+      <img src="images/image-product-2-thumbnail.jpg" alt="image of small shoe" class="small lightboxImg">
+      <img src="images/image-product-3-thumbnail.jpg" alt="image of small shoe" class="small lightboxImg">
+      <img src="images/image-product-4-thumbnail.jpg" alt="image of small shoe" class="small lightboxImg">
+ 
+
+    </div>
+
+    </div>
+   <!-- THUBNAILS END -->
+
+   </section>
+
+  </main>
+
+  <!-- MAIN SECTION END -->
+ 
+</div>
+<!-- HEADER END -->
+  <!-- Collections
+  Men
+  Women
+  About
+  Contact
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart -->
+<!--   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="main.js"></script>
+</body>
+</html>

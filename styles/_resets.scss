@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    min-height: 100vh;
+}
+
+
+body{
+    line-height: 1.5;
+    
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+// #root, #__next {
+//    isolation: isolate;
+//    }
+
+ul li {
+    list-style-type:none;
+}
+
+li a {
+    text-decoration: none;
+}
+   
+html{
+    scroll-behavior: smooth;
+}
+
+button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+i{
+    cursor: pointer;
+}

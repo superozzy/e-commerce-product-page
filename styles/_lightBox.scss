@@ -1,0 +1,106 @@
+.main{
+    .lightBoxSection{
+        display: none;
+        
+        .closeBtn{
+            // position: absolute;
+            // top:0;
+            // right:30%;
+            z-index: 1;
+            @include md(){
+                display: none;
+            }
+        
+           }
+   
+      &__gallery{
+       
+        width: 100%;
+     position: relative;
+     overflow: hidden;
+     z-index: 0;
+    
+      &__item{
+            border-radius: 8px;
+            display: none;
+          &.visible{
+            display: block;
+          }
+            @include md(){
+                border-radius: 0;
+            
+            &.hidden{
+                display: none;
+            }
+            &.visible{
+                display: block;
+              animation:fadeAnimation 1s ease-in-out;
+            }
+            @keyframes fadeAnimation{
+                  0%{
+                    opacity: 0;
+                  }
+                  100%{
+                    opacity: 1;
+                    transform: opacity linear;
+                  }
+            }
+        }
+        }
+        &__actions{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+        
+         width: 100%;
+         position: absolute;
+         top: 50%;
+         transform:translateY(-50%);
+         cursor: pointer;
+       @include md(){
+           display: flex;
+       }
+           // display: flex;
+          
+       
+           .prevBtn, .nextBtn{
+               border-radius: 50%;
+               background-color: $Light-grayish-blue;
+               padding: 0.5rem;
+             width:3rem;
+             height: 3rem;
+             position: relative;
+             
+          
+            
+
+            }
+            .prevBtn {
+              right: 5rem;
+               img{
+                   position: absolute;
+                   top: 50%;
+                   transform:translateY(-50%);
+                right: 1.3rem;
+                &:hover{
+                    background-color: $orange;
+                 }
+                   
+               }
+              }
+              .nextBtn{
+                left: 5rem;
+               img{
+                   position: absolute;
+                   top: 50%;
+                   transform:translateY(-50%);
+                  left: 1rem;
+                   
+               }
+              }
+        }
+      }
+}
+
+}
+

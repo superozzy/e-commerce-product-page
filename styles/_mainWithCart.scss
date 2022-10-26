@@ -1,0 +1,143 @@
+main{
+    
+    .cart-checkout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      @include md(){
+        padding: 2rem 1rem;
+      }
+        &__info{
+          
+            h3{
+                color: $orange;
+                font-size: 1rem;
+            }
+            h1{
+                font-size: 2.5rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                font-weight: $bold;
+                color: $very-vark-blue;
+                @include md(){
+                    margin-bottom: 1rem;
+                    margin-top: 1rem;
+                    font-size: 1.8rem;
+                }
+            }
+            p{
+                font-size: .9rem;
+                color: $Grayish-blue;
+              
+                font-weight: $bold;
+                margin-bottom: 0.8rem;
+            }
+
+        }
+        &__price{
+            font-weight: $bold;
+            @include md(){
+                display: flex;
+                justify-content:space-between;
+                
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 1.2rem;
+              
+                span{
+                    padding: 0.2rem;
+                    background-color:$Light-grayish-blue;
+                    color: $orange;
+                    border-radius: 5px;
+                }
+            }
+            .delete{
+                color: $Grayish-blue;
+            }
+        }
+        .cart-checkout-row{
+            display: flex;
+          
+            justify-content: space-between;
+          align-items: center;
+          width: 100%;
+            @include md(){
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+               
+            }
+            .input-group{
+                display: flex;
+                justify-content: space-between;
+               
+                align-items: center;
+               
+              @include md(){
+                width: 100%;
+              }
+              input{
+                border: none;
+                background-color: $Light-grayish-blue;
+                border-radius: 8px;
+                color: $orange;
+                font-size: 1rem;
+                padding: 1rem;
+                font-weight: bold;
+                cursor: pointer;
+                width: 50%;
+              }
+              input::-webkit-outer-spin-button,
+              input::-webkit-inner-spin-button {
+              appearance: none;
+                margin: 0;
+             
+              }
+              input[type=number] {
+                appearance: textfield;
+               
+              }
+              
+              .quantity-field{
+                color: $very-vark-blue;
+                text-align: center;
+              }
+          
+            }
+            .error{
+                
+                color: red;
+            }
+  .btn-container{
+   width: 100%;
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem 2.5rem;
+        background-color: $orange;
+        width: 100%;
+        color: $White;
+        font-weight: $bold;
+        border-radius: 8px;
+        &:hover{
+            opacity: 75%;;
+        }
+        @include md(){
+      width: 100%;
+      margin-bottom: 2rem;
+        }
+        img{
+            filter: brightness(2);
+        }
+    }
+  
+  }
+  
+        
+        }
+    }
+}

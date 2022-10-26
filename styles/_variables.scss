@@ -1,0 +1,63 @@
+// COLORS
+$orange: hsl(26, 100%, 55%);
+$paleOrange: hsl(25, 100%, 94%);
+
+// TEXT
+$very-vark-blue: hsl(220, 13%, 13%);
+$Dark-grayish-blue: hsl(219, 9%, 45%);
+$Grayish-blue: hsl(220, 14%, 75%);
+$Light-grayish-blue: hsl(223, 64%, 98%); 
+$White: hsl(0, 0%, 100%);
+$Black-lightbox: hsl(0, 0%, 0%);
+// opacity for the lightbox 75%;
+
+
+// FONTS
+$family: 'Kumbh Sans', sans-serif;
+$font-size:16px;
+$medium:400;
+$bold:700;
+
+
+// breakpoints
+// Small tablets and large smartphones (landscape view)
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 900px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (max-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (max-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
